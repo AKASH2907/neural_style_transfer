@@ -122,9 +122,6 @@ grads = K.gradients(loss, final_image)
 
 # set output
 outputs = [loss]
-
-# outputs.append(grads)
-
 outputs += grads
 
 f_outputs = K.function([final_image], outputs)
